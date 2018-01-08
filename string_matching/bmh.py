@@ -34,7 +34,7 @@ def bmh_matcher(t,p):
     return results, c
 
 if __name__ == '__main__':
-    t = 'abbabbbabbababbabbabababbabababbabababbabababbbababababbabababababbbabababa'
+    t = 'abbaabbbabbababbabbabababbabababbabababbabababbbababababbabababababbbabababa'
     p = 'abbab'
     print(make_table(p))
     results, c = bmh_matcher(t,p)
