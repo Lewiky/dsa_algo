@@ -5,4 +5,7 @@ class Comparator:
 
     def compare(self,p,i,t,j):
         self.count += 1
-        return p[i] == t[j]
+        try:
+            return p[i] == t[j]
+        except IndexError:
+            raise IndexError(' Exception: i = {}, j = {}'.format(i,j))
